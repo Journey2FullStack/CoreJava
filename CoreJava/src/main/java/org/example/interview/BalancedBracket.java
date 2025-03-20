@@ -14,11 +14,11 @@ public class BalancedBracket {
     public static boolean validExpression_v0(String expression) {
 
         String[] charExpressions = expression.split("");
-        // step1: check if character is open bracket then add
+        // step1: check if character is open bracket then add to stack
         // step2: else if character is closed bracket
-        // pop the top element and check if the pop element matches with closed bracket.
+        // fetch the top element and check if the top element matches with closed bracket.
         // step3: do the above till stack is not empty.
-
+        // if stack is empty return true  
         int noOfChars = charExpressions.length;
         Stack<String> validExp = new Stack<String>();
         int i = 0;
